@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<birthRecord>
+  <messageHeader>
+    <messageId>MSG008</messageId>
+    <sourceSystem>EPD_HOSPITAL_C</sourceSystem>
+    <timestamp>2026-05-04T12:00:00</timestamp>
+  </messageHeader>
+  <mother>
+    <id>M008</id>
+    <birthDate>1989-08-20</birthDate>
+    <address>
+      <postalCodePrefix>1016</postalCodePrefix>
+    </address>
+  </mother>
+  <pregnancy>
+    <id>P008</id>
+    <gestationalAgeWeeks>38</gestationalAgeWeeks>
+    <gravida>2</gravida>
+    <parity>1</parity>
+  </pregnancy>
+  <delivery>
+    <id>D008</id>
+    <date>2026-04-28</date>
+    <mode>unknown_mode</mode>
+    <place>hospital</place>
+  </delivery>
+  <child>
+    <id>C008</id>
+    <sex>F</sex>
+    <birthWeightGrams>3100</birthWeightGrams>
+    <apgar5>9</apgar5>
+    <admissionNICU>false</admissionNICU>
+  </child>
+</birthRecord>

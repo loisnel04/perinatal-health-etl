@@ -1,0 +1,22 @@
+# XPath mapping from incoming XML messages to the normalized perinatal_records table.
+# This makes the ETL easier to adapt when XML structures change.
+fields:
+  message_id: "messageHeader/messageId"
+  source_system: "messageHeader/sourceSystem"
+  message_timestamp: "messageHeader/timestamp"
+  mother_id: "mother/id"
+  mother_birth_date: "mother/birthDate"
+  postal_code_prefix: "mother/address/postalCodePrefix"
+  pregnancy_id: "pregnancy/id"
+  gestational_age_weeks: "pregnancy/gestationalAgeWeeks"
+  gravida: "pregnancy/gravida"
+  parity: "pregnancy/parity"
+  delivery_id: "delivery/id"
+  delivery_date: "delivery/date"
+  delivery_mode: "delivery/mode"
+  place_of_birth: "delivery/place"
+  child_id: "child/id"
+  child_sex: "child/sex"
+  birth_weight_grams: "child/birthWeightGrams"
+  apgar_5min: "child/apgar5"
+  admission_nicu: "child/admissionNICU"

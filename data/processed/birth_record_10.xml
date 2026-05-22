@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<birthRecord>
+  <messageHeader>
+    <messageId>MSG010</messageId>
+    <sourceSystem>EPD_MIDWIFE_D</sourceSystem>
+    <timestamp>2026-05-05T18:10:00</timestamp>
+  </messageHeader>
+  <mother>
+    <id>M010</id>
+    <birthDate>1987-05-24</birthDate>
+    <address>
+      <postalCodePrefix>9711</postalCodePrefix>
+    </address>
+  </mother>
+  <pregnancy>
+    <id>P010</id>
+    <gestationalAgeWeeks>40</gestationalAgeWeeks>
+    <gravida>3</gravida>
+    <parity>2</parity>
+  </pregnancy>
+  <delivery>
+    <id>D010</id>
+    <date>2026-04-30</date>
+    <mode>vaginal</mode>
+    <place>birth_center</place>
+  </delivery>
+  <child>
+    <id>C010</id>
+    <sex>F</sex>
+    <birthWeightGrams>3650</birthWeightGrams>
+    <apgar5>9</apgar5>
+    <admissionNICU>false</admissionNICU>
+  </child>
+</birthRecord>

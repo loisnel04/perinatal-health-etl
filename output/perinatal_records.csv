@@ -1,0 +1,7 @@
+message_id,source_system,message_timestamp,mother_id,mother_birth_date,postal_code_prefix,pregnancy_id,gestational_age_weeks,gravida,parity,delivery_id,delivery_date,delivery_mode,place_of_birth,child_id,child_sex,birth_weight_grams,apgar_5min,admission_nicu,file_name
+MSG001,EPD_MIDWIFE_A,2026-05-01T08:15:00,M001,1992-04-12,3511,P001,39,2,1,D001,2026-04-21,vaginal,hospital,C001,F,3420,9,0,birth_record_01.xml
+MSG002,EPD_HOSPITAL_B,2026-05-01T09:10:00,M002,1988-11-03,3012,P002,37,1,0,D002,2026-04-22,planned_caesarean,hospital,C002,M,2980,8,0,birth_record_02.xml
+MSG003,EPD_MIDWIFE_A,2026-05-02T10:30:00,M003,1995-02-18,5611,P003,41,3,2,D003,2026-04-23,vaginal,home,C003,F,3890,10,0,birth_record_03.xml
+MSG004,EPD_HOSPITAL_C,2026-05-02T11:05:00,M004,1990-09-29,1017,P004,32,1,0,D004,2026-04-24,emergency_caesarean,hospital,C004,M,1840,7,1,birth_record_04.xml
+MSG005,EPD_MIDWIFE_D,2026-05-03T13:20:00,M005,1985-06-14,9712,P005,40,4,3,D005,2026-04-25,assisted_vaginal,birth_center,C005,U,3560,9,0,birth_record_05.xml
+MSG010,EPD_MIDWIFE_D,2026-05-05T18:10:00,M010,1987-05-24,9711,P010,40,3,2,D010,2026-04-30,vaginal,birth_center,C010,F,3650,9,0,birth_record_10.xml

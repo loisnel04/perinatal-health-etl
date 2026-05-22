@@ -1,0 +1,236 @@
+[
+  {
+    "resourceType": "Bundle",
+    "type": "collection",
+    "identifier": {
+      "value": "MSG001"
+    },
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "id": "mother-M001",
+          "birthDate": "1992-04-12",
+          "address": [
+            {
+              "postalCode": "3511"
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "id": "child-C001",
+          "gender": "female"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "delivery-D001",
+          "subject": {
+            "reference": "Patient/mother-M001"
+          },
+          "performedDateTime": "2026-04-21",
+          "code": {
+            "text": "vaginal"
+          },
+          "location": {
+            "display": "hospital"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "birthweight-C001",
+          "status": "final",
+          "subject": {
+            "reference": "Patient/child-C001"
+          },
+          "code": {
+            "text": "Birth weight"
+          },
+          "valueQuantity": {
+            "value": 3420,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "gestational-age-C001",
+          "status": "final",
+          "subject": {
+            "reference": "Patient/child-C001"
+          },
+          "code": {
+            "text": "Gestational age at birth"
+          },
+          "valueQuantity": {
+            "value": 39,
+            "unit": "weeks"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Bundle",
+    "type": "collection",
+    "identifier": {
+      "value": "MSG002"
+    },
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "id": "mother-M002",
+          "birthDate": "1988-11-03",
+          "address": [
+            {
+              "postalCode": "3012"
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "id": "child-C002",
+          "gender": "male"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "delivery-D002",
+          "subject": {
+            "reference": "Patient/mother-M002"
+          },
+          "performedDateTime": "2026-04-22",
+          "code": {
+            "text": "planned_caesarean"
+          },
+          "location": {
+            "display": "hospital"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "birthweight-C002",
+          "status": "final",
+          "subject": {
+            "reference": "Patient/child-C002"
+          },
+          "code": {
+            "text": "Birth weight"
+          },
+          "valueQuantity": {
+            "value": 2980,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "gestational-age-C002",
+          "status": "final",
+          "subject": {
+            "reference": "Patient/child-C002"
+          },
+          "code": {
+            "text": "Gestational age at birth"
+          },
+          "valueQuantity": {
+            "value": 37,
+            "unit": "weeks"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Bundle",
+    "type": "collection",
+    "identifier": {
+      "value": "MSG003"
+    },
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "id": "mother-M003",
+          "birthDate": "1995-02-18",
+          "address": [
+            {
+              "postalCode": "5611"
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "id": "child-C003",
+          "gender": "female"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "delivery-D003",
+          "subject": {
+            "reference": "Patient/mother-M003"
+          },
+          "performedDateTime": "2026-04-23",
+          "code": {
+            "text": "vaginal"
+          },
+          "location": {
+            "display": "home"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "birthweight-C003",
+          "status": "final",
+          "subject": {
+            "reference": "Patient/child-C003"
+          },
+          "code": {
+            "text": "Birth weight"
+          },
+          "valueQuantity": {
+            "value": 3890,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "gestational-age-C003",
+          "status": "final",
+          "subject": {
+            "reference": "Patient/child-C003"
+          },
+          "code": {
+            "text": "Gestational age at birth"
+          },
+          "valueQuantity": {
+            "value": 41,
+            "unit": "weeks"
+          }
+        }
+      }
+    ]
+  }
+]

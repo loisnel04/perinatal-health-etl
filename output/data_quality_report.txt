@@ -1,0 +1,32 @@
+Perinatal ETL Data Quality Report
+==================================
+Generated at: 2026-05-22 15:40:06.610413
+Valid records: 6
+Rejected records: 4
+Average birth weight: 3223.3 grams
+Average gestational age: 38.2 weeks
+
+Missing values per field:
+           message_id         source_system     message_timestamp 
+                    0                     0                     0 
+            mother_id     mother_birth_date    postal_code_prefix 
+                    0                     0                     0 
+         pregnancy_id gestational_age_weeks               gravida 
+                    0                     0                     0 
+               parity           delivery_id         delivery_date 
+                    0                     0                     0 
+        delivery_mode        place_of_birth              child_id 
+                    0                     0                     0 
+            child_sex    birth_weight_grams            apgar_5min 
+                    0                     0                     0 
+       admission_nicu             file_name 
+                    0                     0 
+
+Rejected record reasons:
+# A tibble: 4 × 2
+  error_reason                                           n
+  <chr>                                              <int>
+1 Missing required field: mother_id                      1
+2 Unknown delivery_mode: unknown_mode                    1
+3 birth_weight_grams outside expected range 300-7000     1
+4 gestational_age_weeks outside expected range 22-44     1

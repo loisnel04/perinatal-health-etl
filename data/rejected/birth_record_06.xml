@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<birthRecord>
+  <messageHeader>
+    <messageId>MSG006</messageId>
+    <sourceSystem>EPD_HOSPITAL_B</sourceSystem>
+    <timestamp>2026-05-03T15:45:00</timestamp>
+  </messageHeader>
+  <mother>
+    <id>M006</id>
+    <birthDate>1998-12-08</birthDate>
+    <address>
+      <postalCodePrefix>6221</postalCodePrefix>
+    </address>
+  </mother>
+  <pregnancy>
+    <id>P006</id>
+    <gestationalAgeWeeks>45</gestationalAgeWeeks>
+    <gravida>1</gravida>
+    <parity>0</parity>
+  </pregnancy>
+  <delivery>
+    <id>D006</id>
+    <date>2026-04-26</date>
+    <mode>vaginal</mode>
+    <place>hospital</place>
+  </delivery>
+  <child>
+    <id>C006</id>
+    <sex>F</sex>
+    <birthWeightGrams>3300</birthWeightGrams>
+    <apgar5>9</apgar5>
+    <admissionNICU>false</admissionNICU>
+  </child>
+</birthRecord>

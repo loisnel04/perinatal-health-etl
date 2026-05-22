@@ -1,0 +1,5 @@
+file_name,message_id,error_reason
+birth_record_06.xml,MSG006,gestational_age_weeks outside expected range 22-44
+birth_record_07.xml,MSG007,Missing required field: mother_id
+birth_record_08.xml,MSG008,Unknown delivery_mode: unknown_mode
+birth_record_09.xml,MSG009,birth_weight_grams outside expected range 300-7000
