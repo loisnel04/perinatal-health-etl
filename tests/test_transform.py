@@ -1,3 +1,7 @@
+"""
+Automated tests for the perinatal ETL pipeline.
+"""
+
 from pathlib import Path
 import sys
 
@@ -9,6 +13,7 @@ from validate import validate_record
 from load import initialize_database, load_valid_records
 
 
+# Verify that a valid XML message is correctly parsed and accepted.
 def test_valid_sample_record_parses_and_validates():
     mapping = load_mapping(PROJECT_ROOT / "config" / "mapping.yml")
     record = parse_xml_file(PROJECT_ROOT / "data" / "input_xml" / "birth_record_01.xml", mapping)
@@ -23,6 +28,7 @@ def test_valid_sample_record_parses_and_validates():
     assert errors == []
 
 
+# Ensure invalid gestational age values are rejected.
 def test_invalid_gestational_age_is_rejected():
     mapping = load_mapping(PROJECT_ROOT / "config" / "mapping.yml")
     record = parse_xml_file(PROJECT_ROOT / "data" / "input_xml" / "birth_record_06.xml", mapping)
@@ -32,6 +38,7 @@ def test_invalid_gestational_age_is_rejected():
     assert any("gestational_age_weeks" in error for error in errors)    
 
 
+# Ensure unrealistic healthcare values are rejected.
 def test_invalid_healthcare_values_are_rejected():
     record = {
         "message_id": "MSG_TEST",
@@ -50,6 +57,7 @@ def test_invalid_healthcare_values_are_rejected():
     assert any("birth_weight_grams" in error.lower() for error in errors)
 
 
+# Ensure database loading remains rerunnable/idempotent.
 def test_load_valid_records_can_be_rerun(tmp_path):
     db_path = tmp_path / "test.db"
     schema_path = Path("sql/schema.sql")

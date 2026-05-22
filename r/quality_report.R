@@ -1,5 +1,8 @@
-# R data quality report for the perinatal ETL portfolio project.
-# Run from the project root with: Rscript r/quality_report.R
+# Generate a healthcare-oriented data quality report
+# from the perinatal ETL pipeline outputs.
+#
+# Run from the project root with:
+# Rscript r/quality_report.R
 
 required_packages <- c(
   "readr",
@@ -7,6 +10,7 @@ required_packages <- c(
   "ggplot2"
 )
 
+# Install and load required packages.
 installed <- rownames(installed.packages())
 
 suppressPackageStartupMessages({
@@ -19,14 +23,17 @@ suppressPackageStartupMessages({
   }
 })
 
+# Define input and output paths.
 records_path <- "output/perinatal_records.csv"
 rejected_path <- "output/rejected_records.csv"
 report_path <- "output/data_quality_report.txt"
 plot_path <- "output/delivery_mode_distribution.png"
 
+# Load ETL outputs.
 records <- read_csv(records_path, show_col_types = FALSE)
 rejected <- read_csv(rejected_path, show_col_types = FALSE)
 
+# Build healthcare and data-quality summary report.
 summary_lines <- c(
   "Perinatal ETL Data Quality Report",
   "==================================",
@@ -45,6 +52,7 @@ summary_lines <- c(
 
 writeLines(summary_lines, report_path)
 
+# Generate delivery mode distribution plot.
 if (nrow(records) > 0) {
   p <- records %>%
     count(delivery_mode) %>%

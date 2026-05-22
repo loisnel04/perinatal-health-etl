@@ -11,6 +11,7 @@ def record_to_fhir_bundle(record: Dict[str, Any]) -> Dict[str, Any]:
     This is intentionally simplified and not a certified implementation of a national profile.
     It shows awareness of FHIR concepts: Bundle, Patient, Procedure, Observation.
     """
+    
     mother_ref = f"Patient/mother-{record['mother_id']}"
     child_ref = f"Patient/child-{record['child_id']}"
 
@@ -69,6 +70,10 @@ def record_to_fhir_bundle(record: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def export_fhir_bundles(records: Iterable[Dict[str, Any]], output_path: str | Path) -> None:
+    """
+    Export structured records as simplified FHIR-style JSON bundles.
+    """
+
     bundles: List[Dict[str, Any]] = [record_to_fhir_bundle(record) for record in records]
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as file:
