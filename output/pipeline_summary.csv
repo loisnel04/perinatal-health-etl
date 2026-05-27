@@ -1,2 +1,2 @@
-input_files,valid_records,rejected_records,database
-10,6,4,C:\Users\loisi\Downloads\perinatal-health-etl\perinatal-health-etl\output\perinatal_registry.db
+xml_input_files,hl7_input_files,valid_records,rejected_records,database
+10,1,6,4,C:\Users\loisi\Downloads\perinatal-health-etl\perinatal-health-etl\output\perinatal_registry.db
